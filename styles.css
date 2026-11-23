@@ -223,3 +223,181 @@
     align-items: center;
   }
 }
+
+
+
+/* NEW PORTFOLIO SECTION STYLING */
+
+.case-studies-section h2,
+.skills-section h2,
+.resume-section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(44px, 6vw, 83px);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  margin: 18px 0 24px;
+}
+
+.section-intro {
+  max-width: 650px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.case-studies-section {
+  background: var(--cream);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.case-card {
+  background: #eee5d9;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 30px;
+  min-width: 0;
+}
+
+.case-number {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: #806957;
+}
+
+.case-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.case-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #5b544e;
+}
+
+.case-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin: 25px 0;
+}
+
+.case-stat strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 43px;
+  color: var(--clay);
+}
+
+.case-stat span {
+  font-size: 12px;
+}
+
+.skills-section {
+  background: #eee5d9;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 55px;
+  margin-top: 40px;
+}
+
+.skill-group {
+  border-top: 1px solid var(--ink);
+  padding-top: 20px;
+}
+
+.skill-group h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.skill-group p {
+  line-height: 1.9;
+  color: #5b544e;
+}
+
+.resume-section {
+  text-align: center;
+  background: var(--cream);
+}
+
+.resume-section > p {
+  max-width: 550px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 15px 28px;
+  border: 1px solid var(--ink);
+  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform .2s;
+}
+
+.resume-btn.primary {
+  background: var(--ink);
+  color: white;
+}
+
+.resume-btn.secondary {
+  background: transparent;
+  color: var(--ink);
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px 32px;
+  margin-top: 40px;
+}
+
+.contact-details a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff9f2;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+@media (max-width: 900px) {
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
