@@ -401,3 +401,23 @@
     align-items: center;
   }
 }
+
+
+/* Clickable case study cards */
+.case-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.case-card-link .case-card {
+  height: 100%;
+  transition: transform .25s ease,
+              box-shadow .25s ease;
+}
+
+.case-card-link:hover .case-card {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(38,35,33,.12);
+}
