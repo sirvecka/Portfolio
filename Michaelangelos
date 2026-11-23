@@ -1,0 +1,674 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Michaelangelo's Restaurant & Bar | Victoria Sirito</title>
+  <meta name="description" content="Social media marketing, brand storytelling, and influencer marketing case study by Victoria Sirito.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .case-page {
+      --page-max: 1120px;
+    }
+
+    .case-page .eyebrow {
+      color: var(--clay);
+    }
+
+    .case-hero {
+      padding: 110px clamp(24px,9vw,150px) 100px;
+      background: var(--cream);
+    }
+
+    .case-hero-inner {
+      max-width: var(--page-max);
+      margin: auto;
+    }
+
+    .case-hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(52px,8vw,110px);
+      font-weight: 500;
+      letter-spacing: -.055em;
+      line-height: 1.05;
+      margin: 25px 0;
+    }
+
+    .case-hero h1 em,
+    .case-page h2 em {
+      color: var(--clay);
+      font-weight: 500;
+    }
+
+    .case-subtitle {
+      font-size: 19px;
+      line-height: 1.8;
+      max-width: 700px;
+      color: #5b544e;
+    }
+
+    .case-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid var(--line);
+    }
+
+    .case-info div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .case-info strong {
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .case-info span {
+      font-size: 14px;
+      color: #665d56;
+    }
+
+    .case-content {
+      max-width: 1120px;
+      margin: auto;
+    }
+
+    .case-page h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(40px,5vw,72px);
+      font-weight: 500;
+      letter-spacing: -.05em;
+      line-height: 1.15;
+      margin: 18px 0 30px;
+    }
+
+    .case-page h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 27px;
+      font-weight: 500;
+    }
+
+    .case-page .body-copy {
+      max-width: 790px;
+      font-size: 16px;
+      line-height: 1.95;
+      color: #5b544e;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .metric {
+      padding: 30px;
+      background: #eee5d9;
+      border: 1px solid var(--line);
+    }
+
+    .metric strong {
+      display: block;
+      font-family: 'Playfair Display',Georgia,serif;
+      font-size: clamp(32px,4vw,55px);
+      font-weight: 500;
+      color: var(--clay);
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .story-section {
+      background: #eee5d9;
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: start;
+    }
+
+    .story-layout .body-copy {
+      margin-bottom: 20px;
+    }
+
+    .reel-panel {
+      background: var(--cream);
+      padding: 30px;
+      border: 1px solid var(--line);
+    }
+
+    .reel-panel .reel-label {
+      font-size: 11px;
+      letter-spacing: .15em;
+      font-weight: 700;
+      color: var(--clay);
+    }
+
+    .reel-panel h3 {
+      margin: 16px 0;
+    }
+
+    .reel-panel p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #5b544e;
+    }
+
+    .reel-link {
+      display: inline-block;
+      background: var(--ink);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 18px;
+      transition: background .2s,transform .2s;
+    }
+
+    .reel-link:hover {
+      background: var(--clay);
+      transform: translateY(-2px);
+    }
+
+    .story-metrics {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .story-metric {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+
+    .story-metric strong {
+      display: block;
+      font-family: 'Playfair Display',Georgia,serif;
+      font-size: 32px;
+      color: var(--clay);
+    }
+
+    .story-metric span {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .creator-section {
+      background: var(--cream);
+    }
+
+    .creator-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .creator-card {
+      background: #eee5d9;
+      border: 1px solid var(--line);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .creator-card h3 {
+      font-size: 24px;
+      overflow-wrap: anywhere;
+      margin: 15px 0;
+    }
+
+    .creator-card .views {
+      font-family: 'Playfair Display',Georgia,serif;
+      font-size: 45px;
+      color: var(--clay);
+      margin-top: 10px;
+    }
+
+    .creator-card .views-label {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .creator-card p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #5b544e;
+    }
+
+    .creator-card .reel-link {
+      margin-top: auto;
+      text-align: center;
+    }
+
+    .creator-card .creator-details {
+      margin-bottom: 25px;
+    }
+
+    .creator-summary {
+      margin-top: 40px;
+      padding: 35px;
+      background: var(--sand);
+    }
+
+    .creator-summary h3 {
+      margin-top: 0;
+    }
+
+    .creator-summary p {
+      font-size: 15px;
+      line-height: 1.9;
+      max-width: 800px;
+    }
+
+    .closing-section {
+      background: #eee5d9;
+      text-align: center;
+    }
+
+    .closing-section p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.9;
+    }
+
+    .case-back {
+      display: inline-block;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .case-back:hover {
+      color: var(--clay);
+    }
+
+    @media (max-width:900px) {
+      .story-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .creator-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width:650px) {
+      .case-hero {
+        padding-top: 75px;
+        padding-bottom: 75px;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .story-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .case-info {
+        gap: 25px;
+      }
+
+      .reel-panel {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body class="case-page">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html#top"
+       aria-label="Victoria Sirito home">
+      VS<span class="dot">.</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#case-studies">Case Studies</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-pill" href="index.html#contact">
+        Let's connect ↗
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- PAGE INTRODUCTION -->
+    <section class="case-hero">
+      <div class="case-hero-inner">
+        <span class="eyebrow">SOCIAL MEDIA MARKETING / CASE STUDY 01</span>
+
+        <h1>Michaelangelo's<br>
+          <em>Restaurant & Bar.</em>
+        </h1>
+
+        <p class="case-subtitle">
+          Building digital connections through authentic
+          storytelling, creative content, and the introduction
+          of influencer marketing.
+        </p>
+
+        <div class="case-info">
+          <div>
+            <strong>My Role</strong>
+            <span>Social Media Marketing Manager</span>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <span>Bronx, New York</span>
+          </div>
+          <div>
+            <strong>Focus</strong>
+            <span>Social Media / Content / Influencer Marketing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section-pad">
+      <div class="case-content">
+        <span class="eyebrow">01 / THE OVERVIEW</span>
+        <h2>Creating content<br><em>that connects.</em></h2>
+
+        <p class="body-copy">
+          As Social Media Marketing Manager at Michaelangelo's
+          Restaurant & Bar, I develop and manage content that
+          showcases the restaurant's personality, community,
+          and dining experience.
+        </p>
+
+        <p class="body-copy">
+          My responsibilities include photography, videography,
+          content planning, editing, social media advertising,
+          and influencer partnerships. My approach combines
+          creative storytelling with measurable marketing results.
+        </p>
+
+        <div class="metrics">
+          <div class="metric">
+            <strong>20.6%</strong>
+            <span>Instagram follower growth in 90 days</span>
+          </div>
+          <div class="metric">
+            <strong>451</strong>
+            <span>Net new Instagram followers</span>
+          </div>
+          <div class="metric">
+            <strong>979</strong>
+            <span>Link clicks from Instagram advertising</span>
+          </div>
+        </div>
+
+        <p style="margin-top:30px">
+          <a class="case-back"
+             href="https://www.instagram.com/michaelangelosnyc/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Explore Michaelangelo's Instagram ↗
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- MOTHER'S DAY STORY -->
+    <section class="story-section section-pad">
+      <div class="case-content">
+
+        <span class="eyebrow">02 / BRAND STORYTELLING</span>
+        <h2>More than<br><em>a restaurant.</em></h2>
+
+        <div class="story-layout">
+          <div>
+            <p class="body-copy">
+              What makes a family-owned restaurant special
+              isn't just what's on the menu, but the people
+              and stories behind it.
+            </p>
+
+            <p class="body-copy">
+              At Michaelangelo's, family is the foundation
+              of the business. Led by two generations of
+              mothers, Liz and Nicollette, the restaurant
+              represents years of dedication and hard work.
+            </p>
+
+            <p class="body-copy">
+              For Mother's Day, I developed a storytelling
+              concept that put the family at the center
+              rather than creating a traditional
+              promotional reel.
+            </p>
+
+            <p class="body-copy">
+              I layered heartfelt voice messages from
+              their children over footage of a surprise
+              celebration featuring chocolates, cupcakes,
+              and gifts at the restaurant.
+            </p>
+
+            <p class="body-copy">
+              The goal was to humanize the brand, celebrate
+              the women behind the business, and create an
+              emotional connection beyond the dining experience.
+            </p>
+          </div>
+
+          <div class="reel-panel">
+            <span class="reel-label">FEATURED REEL</span>
+            <h3>A Mother's Day Story</h3>
+            <p>
+              A family-centered video combining authentic
+              moments, emotional voiceovers, and
+              brand storytelling.
+            </p>
+
+            <a class="reel-link"
+               href="https://www.instagram.com/p/DYLEFkkxhWm/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Watch the Mother's Day Reel ↗
+            </a>
+
+            <div class="story-metrics">
+              <div class="story-metric">
+                <strong>4K+</strong>
+                <span>Views</span>
+              </div>
+
+              <div class="story-metric">
+                <strong>74.9%</strong>
+                <span>Views from non-followers</span>
+              </div>
+
+              <div class="story-metric">
+                <strong>−19.5 pp</strong>
+                <span>Skip rate vs. typical performance</span>
+              </div>
+            </div>
+
+            <p>
+              The reel reached audiences beyond the
+              restaurant's existing following and
+              achieved stronger initial retention
+              than typical account content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFLUENCER MARKETING -->
+    <section class="creator-section section-pad">
+      <div class="case-content">
+
+        <span class="eyebrow">03 / INFLUENCER MARKETING</span>
+        <h2>Introducing a<br><em>new strategy.</em></h2>
+
+        <p class="body-copy">
+          Before my involvement, Michaelangelo's had never
+          implemented influencer collaborations as part
+          of its marketing strategy.
+        </p>
+
+        <p class="body-copy">
+          I identified an opportunity to introduce the
+          restaurant to new audiences through NYC-based
+          food and lifestyle creators.
+        </p>
+
+        <p class="body-copy">
+          I helped establish the restaurant's first creator
+          partnerships by researching influencers, initiating
+          outreach, discussing collaboration opportunities,
+          coordinating content, and reviewing deliverables
+          for brand alignment.
+        </p>
+
+        <div class="creator-grid">
+
+          <!-- CREATOR 1 -->
+          <article class="creator-card">
+            <span class="eyebrow">CREATOR PARTNERSHIP 01</span>
+            <h3>@biteswithberina</h3>
+
+            <div class="views">19K+</div>
+            <span class="views-label">Video views</span>
+
+            <div class="creator-details">
+              <p>36+ hours of watch time</p>
+              <p>163 interactions</p>
+            </div>
+
+            <a class="reel-link"
+               href="https://www.instagram.com/p/DfqahECJId4/"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Collaboration ↗
+            </a>
+          </article>
+
+          <!-- CREATOR 2 -->
+          <article class="creator-card">
+            <span class="eyebrow">CREATOR PARTNERSHIP 02</span>
+            <h3>@naturallynyia</h3>
+
+            <div class="views">1K+</div>
+            <span class="views-label">Video views</span>
+
+            <div class="creator-details">
+              <p>2+ hours of watch time</p>
+              <p>80 interactions</p>
+            </div>
+
+            <a class="reel-link"
+               href="https://www.instagram.com/p/DflEa9EiU4R/"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Collaboration ↗
+            </a>
+          </article>
+
+          <!-- CREATOR 3 -->
+          <article class="creator-card">
+            <span class="eyebrow">CREATOR PARTNERSHIP 03</span>
+            <h3>@bites_withme25</h3>
+
+            <div class="views">11K+</div>
+            <span class="views-label">Video views</span>
+
+            <div class="creator-details">
+              <p>7+ hours of watch time</p>
+              <p>297 interactions</p>
+            </div>
+
+            <a class="reel-link"
+               href="https://www.instagram.com/p/Dft6-YEyqj5/"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Collaboration ↗
+            </a>
+          </article>
+
+        </div>
+
+        <div class="creator-summary">
+          <h3>From idea to ongoing strategy.</h3>
+
+          <p>
+            Across these three collaborations, creator-led
+            content generated more than 31,000 views,
+            540 interactions, and 45 hours of watch time.
+          </p>
+
+          <p>
+            By introducing influencer partnerships, I helped
+            establish a new marketing approach that the
+            restaurant is now beginning to implement
+            as part of its ongoing digital strategy.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="closing-section section-pad">
+      <div class="case-content">
+        <span class="eyebrow">04 / THE TAKEAWAY</span>
+        <h2>Strategy meets<br><em>storytelling.</em></h2>
+
+        <p>
+          My work at Michaelangelo's reflects how
+          creative storytelling, audience insights,
+          and strategic experimentation can help
+          a local business build stronger digital
+          connections.
+        </p>
+
+        <a class="case-back" href="index.html#case-studies">
+          ← Back to all case studies
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Victoria Sirito</span>
+    <span>Made with intention ✳</span>
+    <a href="index.html#top">Back to top ↑</a>
+  </footer>
+
+</body>
+</html>
