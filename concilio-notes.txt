@@ -1,0 +1,17 @@
+<span class="case-number">03 / BRAND DESIGN</span>
+          <h3>The Concilio</h3>
+          <p>
+            Supporting an organization-wide rebranding
+            initiative through consistent visual design
+            and educational materials.
+          </p>
+          <div class="case-stat">
+            <strong>30+</strong>
+            <span>Presentations and resources redesigned</span>
+          </div>
+          <p>
+            Developed a consistent template system
+            that reduced design time for new materials
+            by approximately half.
+          </p>
+        

@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Victoria Sirito — marketing, content creation, and visual storytelling portfolio." />
+  <title>Photography | Victoria Sirito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Victoria Sirito home">
+      VS<span class="dot">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false"
+      aria-controls="site-nav" aria-label="Open navigation">
+      Menu <span aria-hidden="true">☰</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html#work">Work</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="photography.html">Photography</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="Resume%20-%20Victoria%20Sirito.docx%20%281%29.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+      <a class="nav-pill" href="contact.html">Let's connect ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="section-pad"><span class="eyebrow">PHOTOGRAPHY</span><h2>Look <em>closer.</em></h2><h3>Fordham Commencement</h3><div style="max-width:900px;margin:2rem auto;text-align:center"><a id="photo-link" target="_blank" rel="noopener"><img id="gallery-photo" alt="Fordham commencement photograph" style="width:100%;height: min(65vh,650px);object-fit:contain"></a><p><button id="prev" type="button">← Previous</button> <span id="counter" aria-live="polite"></span> <button id="next" type="button">Next →</button></p></div></section><script>const photos=['IMG_0392.jpg','IMG_0393.jpg','IMG_0396.jpg','IMG_0394.jpg','IMG_0395.jpg','IMG_0391%202.jpg'];let i=0;function show(){document.getElementById('gallery-photo').src=photos[i];document.getElementById('photo-link').href=photos[i];document.getElementById('counter').textContent=(i+1)+' / '+photos.length;}document.getElementById('prev').onclick=()=>{i=(i+photos.length-1)%photos.length;show()};document.getElementById('next').onclick=()=>{i=(i+1)%photos.length;show()};show();</script>
+</main>
+<footer class="site-footer">
+    <span>© <span id="year">2026</span> Victoria Sirito</span>
+    <span>Made with intention ✳</span>
+    <a href="index.html">Back to home ↑</a>
+  </footer>
+</body>
+</html>
