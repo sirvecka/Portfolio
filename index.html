@@ -11,7 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
-</head>
+<style>
+.home-intro{display:grid;grid-template-columns:minmax(0, 340px) minmax(0, 1fr);gap:clamp(24px,5vw,80px);align-items:center;max-width:1050px;margin:36px 0 20px;}
+.home-intro .about-photo{width:100%;max-width:340px;box-sizing:border-box;margin:0 auto;}
+.home-intro img{display:block;width:100%;height:auto;}
+.home-bio p{font-size:clamp(17px,2vw,23px);line-height:1.65;max-width:600px;}
+.home-actions{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px;margin-top:24px;}
+@media(max-width:700px){.home-intro{grid-template-columns:1fr;}.home-intro .about-photo{max-width:260px;}.home-actions{justify-content:flex-start;}}
+</style></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -26,13 +33,13 @@
     </button>
 
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="index.html#work">Work</a>
-      <a href="case-studies.html">Case Studies</a>
+      <a href="index.html">Home</a>
+      <a href="social-media.html">Social Media</a>
       <a href="photography.html">Photography</a>
+      <a href="case-studies.html">Case Studies</a>
       <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="Resume%20-%20Victoria%20Sirito.docx%20%281%29.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
-      <a class="nav-pill" href="contact.html">Let's connect ↗</a>
+      <a href="resume.html">Résumé</a>
+      <a class="nav-pill" href="contact.html" aria-label="Contact — Let's connect">Let's connect ↗</a>
     </nav>
   </header>
 
@@ -47,18 +54,15 @@
 
       <h1>Hello, <em>I'm Victoria.</em></h1>
 
-      <div class="hero-bottom">
-        <p>
-          A Fordham University student in the Gabelli School of
-          Business class of 2027 who loves turning ideas into
-          visuals, stories, and experiences that connect.
-        </p>
-        <a class="circle-link" href="#work"
-          aria-label="Explore selected work">↓</a>
-      </div>
-
-      <div class="hero-decoration" aria-hidden="true">
-        creative<br/>thinking<span>↗</span>
+      <div class="home-intro">
+        <div class="about-photo"><img src="headshot.png" alt="Victoria Sirito professional headshot"></div>
+        <div class="home-bio">
+          <p>I'm a marketing student at Fordham University's Gabelli School of Business, passionate about combining creative storytelling, visual design and marketing strategy to build meaningful connections between brands and their audiences.</p>
+          <div class="resume-buttons home-actions">
+            <a class="resume-btn primary" href="contact.html">Contact me ↗</a>
+            <a class="resume-btn secondary" href="about.html">Learn more →</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -84,7 +88,7 @@
             <span class="art-corner">01 ↗</span>
           </div>
           <div class="project-meta">
-            <h3>Marketing Campaigns</h3>
+            <h3>Case Studies</h3>
             <span>Strategy / Campaigns</span>
           </div>
         </a>
@@ -116,6 +120,31 @@
           </div>
         </a>
 
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume-section section-pad" id="resume">
+      <span class="eyebrow">02 / MY EXPERIENCE</span>
+      <h2>My <em>résumé.</em></h2>
+      <p>
+        Explore my experience in marketing, social media,
+        content creation, and brand strategy.
+      </p>
+
+      <div class="resume-buttons">
+        <a class="resume-btn primary"
+           href="Resume%20-%20Victoria%20Sirito.docx%20%281%29.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Résumé ↗
+        </a>
+
+        <a class="resume-btn secondary"
+           href="Resume%20-%20Victoria%20Sirito.docx%20%281%29.pdf"
+           download>
+          Download PDF ↓
+        </a>
       </div>
     </section>
 
