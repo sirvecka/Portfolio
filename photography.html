@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
-</head>
+<style>.photo-gallery h1{font-family:"Playfair Display",serif;font-size:clamp(3rem,7vw,6rem);line-height:1.1;margin:1rem 0 2rem}.photo-gallery h2{font-family:"Playfair Display",serif;font-size:clamp(1.6rem,3vw,2.5rem);margin:0 0 1rem}.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:2rem}.photo-grid a{display:block;overflow:hidden;background:#e6d9c8}.photo-grid img{display:block;width:100%;height:100%;aspect-ratio:4/5;object-fit:contain;transition:transform .25s}.photo-grid a:hover img{transform:scale(1.025)}@media(max-width:800px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.photo-grid{grid-template-columns:1fr}}</style></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -36,9 +36,7 @@
     </nav>
   </header>
 
-  <main id="main">
-<section class="section-pad"><span class="eyebrow">PHOTOGRAPHY</span><h2>Look <em>closer.</em></h2><h3>Fordham Commencement</h3><div style="max-width:900px;margin:2rem auto;text-align:center"><a id="photo-link" target="_blank" rel="noopener"><img id="gallery-photo" alt="Fordham commencement photograph" style="width:100%;height: min(65vh,650px);object-fit:contain"></a><p><button id="prev" type="button">← Previous</button> <span id="counter" aria-live="polite"></span> <button id="next" type="button">Next →</button></p></div></section><script>const photos=['IMG_0392.jpg','IMG_0393.jpg','IMG_0396.jpg','IMG_0394.jpg','IMG_0395.jpg','IMG_0391%202.jpg'];let i=0;function show(){document.getElementById('gallery-photo').src=photos[i];document.getElementById('photo-link').href=photos[i];document.getElementById('counter').textContent=(i+1)+' / '+photos.length;}document.getElementById('prev').onclick=()=>{i=(i+photos.length-1)%photos.length;show()};document.getElementById('next').onclick=()=>{i=(i+1)%photos.length;show()};show();</script>
-</main>
+  <main id="main"><section class="section-pad photo-gallery"><span class="eyebrow">PHOTOGRAPHY</span><h1>Look <em>closer.</em></h1><h2>Fordham University — Commencement 2026</h2><p>Selected event photography. Click any photograph to view it at full size.</p><div class="photo-grid"><a href="commencement-1.jpg" target="_blank" rel="noopener"><img src="commencement-1.jpg" alt="Fordham commencement photograph 1"></a><a href="commencement-2.jpg" target="_blank" rel="noopener"><img src="commencement-2.jpg" alt="Fordham commencement photograph 2"></a><a href="commencement-3.jpg" target="_blank" rel="noopener"><img src="commencement-3.jpg" alt="Fordham commencement photograph 3"></a><a href="commencement-4.jpg" target="_blank" rel="noopener"><img src="commencement-4.jpg" alt="Fordham commencement photograph 4"></a><a href="commencement-5.jpg" target="_blank" rel="noopener"><img src="commencement-5.jpg" alt="Fordham commencement photograph 5"></a><a href="commencement-6.jpg" target="_blank" rel="noopener"><img src="commencement-6.jpg" alt="Fordham commencement photograph 6"></a></div></section></main>
 <footer class="site-footer">
     <span>© <span id="year">2026</span> Victoria Sirito</span>
     <span>Made with intention ✳</span>
